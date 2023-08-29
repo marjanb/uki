@@ -2,6 +2,10 @@ body {
   font-family: 'Inter Tight', Arial, sans-serif;
 }
 
+.instagram-icon {
+	width: 50px;
+}
+
 .nav {
 	position: relative;
 }
@@ -53,14 +57,19 @@ body {
 
 .nav a.active:after {
 	background-color: black;
-	top: 29px;
+	top: 30px;
+}
+
+.nav--sub a.active:after {
+	top: 20px;
 }
 
 .nav--sub:before {
 	top: 14px;
 }
 
-.nav--sub a:hover:after {
+.nav--sub a:hover:after,
+.nav--sub a.active:hover:after {
 	top: 20px;
 }
 

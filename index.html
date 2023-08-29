@@ -5,27 +5,31 @@
   <title></title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet"/>
+
 </head>
 <body>
- <div class="container mx-auto">
-    <h1 class="text-6xl font-light">
-    UKI TUBI
-  </h1>
-  <div class="grid grid-cols-4 gap-4">
+<div class="container mx-auto px-4">
+  <div class="flex justify-between pt-8">
+    <h1 class="text-6xl font-extralight">
+      UKI TUBI
+    </h1>
+    <div>
+      <a href=""><img src="assets/img/instagram.svg" alt="Instagram"/></a>
+    </div>
+  </div>
+  <div>
+    <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
+      <li><a href="" class="block">Video</a></li>
+      <li><a href="photo.html" class="block">Photo</a></li>
+      <li><a href="" class="block">Design</a></li>
+      <li><a href="" class="block">Uki</a></li>
+      <li><a href="" class="block">Contact</a></li>
+    </ul>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
     <div>01</div>
     <div>02</div>
     <div>03</div>
@@ -36,6 +40,8 @@
     <div>08</div>
     <div>09</div>
   </div>
- </div>
+</div>
+
+<script src="assets/js/fslightbox.js" defer></script>
 </body>
 </html>

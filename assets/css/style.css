@@ -1,0 +1,74 @@
+body {
+  font-family: 'Inter Tight', Arial, sans-serif;
+}
+
+.nav {
+	position: relative;
+}
+
+.nav:before {
+	content: none;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav:before {
+		content: "";
+	}
+}
+
+.nav a {
+	position: relative;
+	transition: all 150ms;
+}
+
+.nav a:before, .nav a:after {
+	content: "";
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transition: all 150ms;
+}
+
+.nav a:hover:before {
+	background-color: white;
+}
+
+.nav a:hover:after {
+	transition: all 150ms;
+	background-color: black;
+	top: 30px;
+}
+
+.nav a.active:before {
+	background-color: white;
+}
+
+.nav a.active:after {
+	background-color: black;
+	top: 29px;
+}
+
+.nav--sub:before {
+	top: 14px;
+}
+
+.nav--sub a:hover:after {
+	top: 20px;
+}
+
+.fslightbox-toolbar > div:first-child,
+.fslightbox-slide-number-container {
+	display: none !important;
+}
+
+img {
+	width: 100%;
+}

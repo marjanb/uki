@@ -75,6 +75,14 @@ body {
 	top: 14px;
 }
 
+.nav--none {
+	position: static;
+}
+
+.nav--none:before {
+	content: none !important;
+}
+
 .fslightbox-toolbar > div:first-child,
 .fslightbox-slide-number-container {
 	display: none !important;
@@ -82,4 +90,38 @@ body {
 
 img {
 	width: 100%;
+}
+
+.photo-item {
+	/*position: relative;*/
+}
+
+.photo-item .hidden {
+	position: absolute;
+	transform: translate(0, 0);
+	z-index: -2;
+}
+
+.photo-item:nth-child(1) .hidden {
+	left: 0;
+	bottom: 0;
+}
+
+.photo-item:nth-child(2) .hidden {
+	right: 0;
+	bottom: 0;
+}
+
+.photo-item:nth-child(3) .hidden {
+	right: 0;
+	top: 0;
+}
+
+.photo-item:nth-child(4) .hidden {
+	left: 0;
+	top: 0;
+}
+
+.photo-item:hover .hidden {
+	display: block;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<head>
+  <meta charset="utf-8">
+  <title>UKI TUBI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container mx-auto px-4">
+  <div class="flex justify-between pt-8 items-center">
+    <h1 class="text-5xl md:text-6xl font-extralight">
+      <a href="/">UKI TUBI</a>
+    </h1>
+    <div>
+      <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+    </div>
+  </div>
+  <div>
+    <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
+      <li><a href="video.html">Video</a></li>
+      <li><a href="photo.html">Photo</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="uki.html">Uki</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+  <div>
+    <h1 vlass="uppercase text-3xl">Contact</h1>
+  </div>
+  <div class="mx-auto max-w-xl">
+    <form name="contact" method="POST" netlify>
+      <input type="hidden" name="form-name" value="contact">
+      <div class="pb-8">
+        <label for="name" class="block mb-2 font-medium text-gray-900 dark:text-white uppercase">Name</label>
+        <input type="text" id="name" name="name"
+               class="bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-2xl"
+               required>
+      </div>
+      <div class="pb-8">
+        <label for="email" class="block mb-2 font-medium text-gray-900 dark:text-white uppercase">Email</label>
+        <input type="email" id="email" name="email"
+               class="bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-2xl"
+               required>
+      </div>
+      <div class="pb-8">
+        <label for="message" class="block mb-2 font-medium text-gray-900 dark:text-white uppercase">Message</label>
+        <textarea type="text" id="message" name="message"
+               class="bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-2xl min-h-[200px]"
+                  required></textarea>
+      </div>
+      <div>
+        <button type="submit"
+                class="text-white bg-black hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 uppercase">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

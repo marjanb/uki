@@ -41,11 +41,15 @@ body {
 	transition: all 150ms;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
 	color: white;
 }
 
-.nav a:hover:after {
+.nav a:hover:after,
+.nav a:focus:after,
+.nav a:active:after {
 	transition: all 150ms;
 	background-color: white;
 	height: 100%;

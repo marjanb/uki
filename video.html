@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<head>
+  <meta charset="utf-8">
+  <title>UKI TUBI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container mx-auto px-4">
+  <div class="flex justify-between pt-8 items-center">
+    <h1 class="text-5xl md:text-6xl font-extralight">
+      <a href="/">UKI TUBI</a>
+    </h1>
+    <div>
+      <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+    </div>
+  </div>
+  <div>
+    <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
+      <li><a href="video.html" class="active">Video</a></li>
+      <li><a href="photo.html">Photo</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="uki.html">Uki</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mx-autol">
+    <h1 class="uppercase text-5xl font-light pt-12 pb-16">Video</h1>
+
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a loading="lazy" data-fslightbox="gallery" href="assets/media/Bed.mp4" id="video">VIDEO 1</a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/heart.jpg"><img
+          src="assets/img/photo/age-of-aquarius/heart_thumb.jpg"/></a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/root.jpg"><img
+          src="assets/img/photo/age-of-aquarius/root_thumb.jpg"/></a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/sacral.jpg"><img
+          src="assets/img/photo/age-of-aquarius/sacral_thumb.jpg"/></a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/solarplexus.jpg"><img
+          src="assets/img/photo/age-of-aquarius/solarplexus_thumb.jpg"/></a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/thirdeye.jpg"><img
+          src="assets/img/photo/age-of-aquarius/thirdeye_thumb.jpg"/></a>
+        <a loading="lazy" data-fslightbox="gallery" href="assets/img/photo/age-of-aquarius/throat.jpg"><img
+          src="assets/img/photo/age-of-aquarius/throat_thumb.jpg"/></a>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="assets/js/fslightbox.js"></script>
+<!--<script type="text/javascript">-->
+<!--  var lightbox = new FsLightbox();-->
+<!--  console.log('aaa lightbox', lightbox);-->
+<!--  var aha = fsLightboxInstances["gallery"];-->
+<!--  aha.props.onOpen = function (instance) {-->
+<!--    console.log(instance);-->
+<!--      var vid = document.getElementsByClassName('fslightbox-source');-->
+<!--      vid[0].play();-->
+<!--  }-->
+<!--</script>-->
+</body>
+</html>

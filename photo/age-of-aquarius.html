@@ -7,8 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap" rel="stylesheet">
-  <link href="../assets/css/output.css" rel="stylesheet">
-  <link href="../assets/css/style.css" rel="stylesheet"/>
+  <link href="/assets/css/output.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="/assets/css/lightgallery-bundle-2.7.1.min.css" />
+  <link rel="preload" href="/assets/js/spotlight-0.7.8.bundle.js" as="script">
 
 </head>
 <body>
@@ -41,23 +43,37 @@
     <p class="text-2xl md:text-3xl font-light leading-relaxed md:leading-relaxed"><span class="italic font-normal">Age of Aquarius</span> is a series of seven self-portraits, each visually reinterpreting a tarot card from my most recent reading. This reading, known as a chakra spread, pulls seven cards for each one of the seven energy centers along my spinal cord. Starting from the tailbone and ending at the pineal gland: Root, Sacral, Solar Plexus, Heart, Throat, Third Eye, and Crown. These images serve as a reminder of where I was in life, mentally, physically, emotionally, and spiritually, the night that Pluto shifted into the constellation of Aquarius.</p>
   </section>
   <section>
-    <div id="macy-container">
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/crown.jpg"><img src="../assets/img/photo/age-of-aquarius/crown_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/heart.jpg"><img src="../assets/img/photo/age-of-aquarius/heart_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/root.jpg"><img src="../assets/img/photo/age-of-aquarius/root_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/sacral.jpg"><img src="../assets/img/photo/age-of-aquarius/sacral_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/solarplexus.jpg"><img src="../assets/img/photo/age-of-aquarius/solarplexus_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/thirdeye.jpg"><img src="../assets/img/photo/age-of-aquarius/thirdeye_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="../assets/img/photo/age-of-aquarius/throat.jpg"><img src="../assets/img/photo/age-of-aquarius/throat_thumb.jpg" /></a>
+    <div id="macy-container" class="spotlight-group" data-animation="fade" data-control="close,next,prev">
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/crown.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/crown_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/heart.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/heart_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/root.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/root_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/sacral.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/sacral_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/solarplexus.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/solarplexus_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/thirdeye.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/thirdeye_thumb.jpg" />
+      </a>
+      <a class="spotlight" href="/assets/img/photo/age-of-aquarius/throat.jpg">
+        <img loading="lazy" src="/assets/img/photo/age-of-aquarius/throat_thumb.jpg" />
+      </a>
     </div>
   </section>
 </div>
 
-<script src="../assets/js/macy-2.5.1.min.js"></script>
-<script src="../assets/js/fslightbox.js" defer></script>
+<script src="/assets/js/macy-2.5.1.min.js"></script>
+<script src="/assets/js/spotlight-0.7.8.bundle.js" defer></script>
 
 <script type="text/javascript">
-var macyInstance = Macy({
+Macy({
   container: '#macy-container',
   margin: {
     x: 1,

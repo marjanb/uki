@@ -38,30 +38,30 @@
     </ul>
   </div>
   <section>
-    <div id="macy-container">
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/delicate.jpg"><img src="/assets/img/photo/more/delicate_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/kricaci.jpg"><img src="/assets/img/photo/more/kricaci_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/divinefemme3.jpg"><img src="/assets/img/photo/more/divinefemme3_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/photosynthesis.jpg"><img src="/assets/img/photo/more/photosynthesis_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/gordana.jpg"><img src="/assets/img/photo/more/gordana_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/psycho.jpg"><img src="/assets/img/photo/more/psycho_thumb.jpg" /></a>
-      <a loading="lazy" data-fslightbox="gallery" href="/assets/img/photo/more/santamonicasky.jpg"><img src="/assets/img/photo/more/santamonicasky_thumb.jpg" /></a>
+    <div id="macy-container" class="spotlight-group" data-animation="fade" data-control="close,next,prev">
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/delicate.jpg"><img src="/assets/img/photo/more/delicate_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/kricaci.jpg"><img src="/assets/img/photo/more/kricaci_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/divinefemme3.jpg"><img src="/assets/img/photo/more/divinefemme3_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/photosynthesis.jpg"><img src="/assets/img/photo/more/photosynthesis_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/gordana.jpg"><img src="/assets/img/photo/more/gordana_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/psycho.jpg"><img src="/assets/img/photo/more/psycho_thumb.jpg" /></a>
+      <a loading="lazy" class="spotlight" href="/assets/img/photo/more/santamonicasky.jpg"><img src="/assets/img/photo/more/santamonicasky_thumb.jpg" /></a>
     </div>
   </section>
 </div>
 
 <script src="../assets/js/macy-2.5.1.min.js"></script>
-<script src="../assets/js/fslightbox.js" defer></script>
+<script src="/assets/js/spotlight-0.7.8.bundle.js" defer></script>
 
 <script type="text/javascript">
-var macyInstance = Macy({
+Macy({
   container: '#macy-container',
   margin: {
     x: 1,
     y: 1,
   },
   breakAt: {
-    375: {
+    468: {
       columns: 2
     },
     1024: {

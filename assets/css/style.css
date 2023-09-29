@@ -6,25 +6,6 @@ body {
 	width: 50px;
 }
 
-.nav {
-	position: relative;
-}
-
-.nav:before {
-	content: none;
-	height: 1px;
-	background-color: black;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-}
-
-@media only screen and (min-width: 768px) {
-  .nav:before {
-		content: "";
-	}
-}
-
 .nav a {
 	position: relative;
 	transition: all 150ms;

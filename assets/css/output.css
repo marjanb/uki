@@ -63,11 +63,6 @@ body {
   content: none !important;
 }
 
-.fslightbox-toolbar > div:first-child,
-.fslightbox-slide-number-container {
-  display: none !important;
-}
-
 img {
   width: 100%;
 }
@@ -911,6 +906,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -925,6 +925,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-right {
@@ -949,6 +957,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-extralight {
@@ -1081,8 +1094,22 @@ video {
     flex-direction: row;
   }
 
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }

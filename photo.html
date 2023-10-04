@@ -14,7 +14,7 @@
 <body>
 <div class="app container mx-auto px-4">
   <header>
-    <div class="flex justify-between pt-8 items-center">
+    <div class="flex justify-between pt-4 md:pt-8 items-center">
       <h1 class="text-5xl md:text-6xl font-extralight">
         <a href="/">UKI TUBI</a>
       </h1>
@@ -23,7 +23,7 @@
       </div>
     </div>
   </header>
-  <div>
+  <main class="app-content">
     <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
       <li><a href="video.html">Video</a></li>
       <li><a href="photo.html" class="active">Photo</a></li>
@@ -32,30 +32,38 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div>
-      <ul class="uppercase font-light text-5xl py-8 nav nav--sub nav--none">
-        <li class="py-4 photo-item">
+      <ul class="uppercase font-light text-4xl md:text-5xl py-8 nav nav--sub nav--none">
+        <li class="py-2 md:py-4 photo-item">
           <a href="photo/them.html">Them</a>
           <div class="hidden"><img src="assets/img/photo/them/desire_thumb.jpg" alt=""></div>
         </li>
-        <li class="py-4 photo-item">
+        <li class="py-2 md:py-4 photo-item">
           <a href="photo/age-of-aquarius.html">Age Of Aquarius</a>
           <div class="hidden"><img src="assets/img/photo/age-of-aquarius/solarplexus_thumb.jpg" alt=""></div>
         </li>
-        <li class="py-4 photo-item">
+        <li class="py-2 md:py-4 photo-item">
           <a href="photo/sine-moj.html">Sine Moj</a>
           <div class="hidden"><img src="assets/img/photo/sine-moj/sinemoj3_thumb.jpg" alt=""></div>
         </li>
-        <li class="py-4 photo-item">
+        <li class="py-2 md:py-4 photo-item">
           <a href="photo/faces.html">Faces</a>
           <div class="hidden"><img src="assets/img/photo/faces/lookaway_thumb.jpg" alt=""></div>
         </li>
-        <li class="py-4 photo-item">
+        <li class="py-2 md:py-4 photo-item">
           <a href="photo/more.html">More</a>
           <div class="hidden"><img src="assets/img/photo/more/santamonicasky_thumb.jpg" alt=""></div>
         </li>
       </ul>
     </div>
-  </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <a href="/">UKI TUBI</a>
+    </div>
+    <div>
+      © 2023 UKI TUBI
+    </div>
+  </footer>
 </div>
 </body>
 </html>

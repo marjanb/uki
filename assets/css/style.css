@@ -64,11 +64,6 @@ body {
   content: none !important;
 }
 
-.fslightbox-toolbar > div:first-child,
-.fslightbox-slide-number-container {
-  display: none !important;
-}
-
 img {
   width: 100%;
 }

@@ -20,7 +20,7 @@
 <body>
 <div class="app container mx-auto px-4">
   <header>
-    <div class="flex justify-between pt-8 items-center">
+    <div class="flex justify-between pt-4 md:pt-8 items-center">
       <h1 class="text-5xl md:text-6xl font-extralight">
         <a href="/">UKI TUBI</a>
       </h1>
@@ -43,16 +43,25 @@
         <li><a href="/photo/more.html">More</a></li>
       </ul>
     </div>
-    <section class="max-w-5xl">
-      <div id="macy-container">
-        <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj1.jpg"><img
-          src="/assets/img/photo/sine-moj/sinemoj1_thumb.jpg"/></a>
-        <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj2.jpg"><img
-          src="/assets/img/photo/sine-moj/sinemoj2_thumb.jpg"/></a>
-        <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj3.jpg"><img
-          src="/assets/img/photo/sine-moj/sinemoj3_thumb.jpg"/></a>
-      </div>
-    </section>
+  </header>
+  <main class="max-w-5xl app-content">
+    <div id="macy-container">
+      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj1.jpg"><img
+        src="/assets/img/photo/sine-moj/sinemoj1_thumb.jpg"/></a>
+      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj2.jpg"><img
+        src="/assets/img/photo/sine-moj/sinemoj2_thumb.jpg"/></a>
+      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj3.jpg"><img
+        src="/assets/img/photo/sine-moj/sinemoj3_thumb.jpg"/></a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <a href="/">UKI TUBI</a>
+    </div>
+    <div>
+      © 2023 UKI TUBI
+    </div>
+  </footer>
 </div>
 
 <script src="/assets/js/macy-2.5.1.min.js"></script>

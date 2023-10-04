@@ -11,25 +11,27 @@
   <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container mx-auto px-4">
-  <div class="flex justify-between pt-8 items-center">
-    <h1 class="text-5xl md:text-6xl font-extralight">
-      <a href="/">UKI TUBI</a>
-    </h1>
-    <div>
-      <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+<div class="app container mx-auto px-4">
+  <header>
+    <div class="flex justify-between pt-8 items-center">
+      <h1 class="text-5xl md:text-6xl font-extralight">
+        <a href="/">UKI TUBI</a>
+      </h1>
+      <div>
+        <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+      </div>
     </div>
-  </div>
-  <div>
-    <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
-      <li><a href="video.html">Video</a></li>
-      <li><a href="photo.html">Photo</a></li>
-      <li><a href="design.html">Design</a></li>
-      <li><a href="uki.html">Uki</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </div>
-  <div class="mx-auto max-w-xl">
+    <div>
+      <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
+        <li><a href="video.html">Video</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="uki.html">Uki</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="mx-auto max-w-xl app-content">
     <h1 class="uppercase text-5xl font-light pt-12 pb-16">Contact</h1>
     <form name="contact" method="POST" netlify>
       <input type="hidden" name="form-name" value="contact">
@@ -39,13 +41,15 @@
         </label>
       </p>
       <div class="pb-8">
-        <label for="name" class="block text-2xl text-white dark:text-white uppercase bg-black inline-flex px-2">Name</label>
+        <label for="name"
+               class="block text-2xl text-white dark:text-white uppercase bg-black inline-flex px-2">Name</label>
         <input type="text" id="name" name="name"
                class="bg-white border border-gray-950 text-gray-900 border-4  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-2xl px-6"
                required>
       </div>
       <div class="pb-8">
-        <label for="email" class="block text-2xl text-white dark:text-white uppercase bg-black inline-flex px-2">Email</label>
+        <label for="email"
+               class="block text-2xl text-white dark:text-white uppercase bg-black inline-flex px-2">Email</label>
         <input type="email" id="email" name="email"
                class="bg-white border border-gray-950 text-gray-900 border-4  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-2xl px-6"
                required>
@@ -63,7 +67,15 @@
         </button>
       </div>
     </form>
-  </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <a href="/">UKI TUBI</a>
+    </div>
+    <div>
+      © 2023 UKI TUBI
+    </div>
+  </footer>
 </div>
 </body>
 </html>

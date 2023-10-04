@@ -1,7 +1,4 @@
+@import "style.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.age-group {
-	min-width: 870px;
-}

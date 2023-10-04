@@ -73,10 +73,6 @@ img {
 	width: 100%;
 }
 
-.photo-item {
-	/*position: relative;*/
-}
-
 .photo-item .hidden {
 	position: absolute;
 	transform: translate(0, 0);
@@ -99,10 +95,29 @@ img {
 }
 
 .photo-item:nth-child(4) .hidden {
-	left: 0;
-	top: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .photo-item:hover .hidden {
 	display: block;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+	width: 100%;
+}
+
+.footer {
+	padding: 12px 0;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: space-between;
 }

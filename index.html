@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <head>
   <meta charset="utf-8">
   <title>UKI TUBI</title>
@@ -9,28 +11,59 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;700&display=swap" rel="stylesheet">
   <link href="assets/css/output.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="app container mx-auto px-4">
   <header>
-   <div class="flex justify-between pt-8 items-center">
-    <h1 class="text-5xl md:text-6xl font-extralight">
-      <a href="/">UKI TUBI</a>
-    </h1>
-    <div>
-      <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+    <div class="flex justify-between pt-8 items-center">
+      <h1 class="text-5xl md:text-6xl font-extralight">
+        <a href="/">UKI TUBI</a>
+      </h1>
+      <div>
+        <a href=""><img src="assets/img/instagram.svg" alt="Instagram" class="instagram-icon"/></a>
+      </div>
     </div>
-  </div>
-  <div>
-   <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
-      <li><a href="video.html">Video</a></li>
-      <li><a href="photo.html">Photo</a></li>
-      <li><a href="design.html">Design</a></li>
-      <li><a href="uki.html">Uki</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+    <div>
+      <ul class="flex uppercase font-light text-3xl justify-between py-8 nav flex-col md:flex-row">
+        <li><a href="video.html">Video</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="uki.html">Uki</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="app-content flex items-center">
+    <div id="macy-container">
+      <div class="grid grid-cols-[1fr] md:grid-cols-[50%_50%]">
+        <a loading="lazy" href="/video.html" class="hp-item hp-item-1">
+          <img src="/assets/img/homepage/hp1.jpg"/>
+          <span>VIDEO</span>
+        </a>
+        <a loading="lazy" href="/photo.html" class="hp-item hp-item-2">
+          <img src="/assets/img/homepage/hp2.jpg"/>
+          <span>PHOTO</span>
+        </a>
+        <a loading="lazy" href="/design.html" class="hp-item hp-item-3">
+          <img src="/assets/img/homepage/hp3.jpg"/>
+          <span>DESIGN</span>
+        </a>
+        <a loading="lazy" href="/uki.html" class="hp-item hp-item-4">
+          <img src="/assets/img/homepage/hp4.jpg"/>
+          <span>UKI</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <a href="/">UKI TUBI</a>
+    </div>
+    <div>
+      © 2023 UKI TUBI
+    </div>
+  </footer>
 </div>
 
 <script src="assets/js/fslightbox.js" defer></script>

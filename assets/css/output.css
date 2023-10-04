@@ -99,7 +99,7 @@ img {
   transform: translate(0, -50%);
 }
 
-.photo-item:hover .hidden {
+.photo-item a:hover ~ .hidden {
   display: block;
 }
 
@@ -119,6 +119,88 @@ img {
   border-top: 1px solid black;
   display: flex;
   justify-content: space-between;
+}
+
+.hp-item {
+  position: relative;
+}
+
+.hp-item span {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+  position: absolute;
+  z-index: 1;
+  font-size: 80px;
+  font-weight: 200;
+  transition: all .3s;
+  line-height: 1;
+}
+
+.hp-item-1 span {
+  right: 0;
+  bottom: 0;
+}
+
+.hp-item-2 span {
+  left: 0;
+  bottom: 0;
+}
+
+.hp-item-3 span {
+  right: 0;
+  top: 0;
+}
+
+.hp-item-4 span {
+  left: 0;
+  top: 0;
+}
+
+.hp-item:hover span {
+  visibility: visible;
+  opacity: 1;
+  color: white;
+}
+
+.hp-item span:before, .hp-item span:after {
+  content: "";
+  height: 0px;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transition: all 150ms;
+}
+
+.hp-item:hover span,
+.hp-item:focus span,
+.hp-item:active span {
+  color: white;
+}
+
+.hp-item:hover span:after,
+.hp-item:focus span:after,
+.hp-item:active span:after {
+  transition: all 150ms;
+  background-color: white;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  z-index: -1;
+}
+
+.hp-item span.active {
+  color: white;
+}
+
+.hp-item span.active:after {
+  background-color: white;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  z-index: -1;
 }
 
 /*
@@ -985,6 +1067,10 @@ video {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:grid-cols-\[50\%_50\%\] {
+    grid-template-columns: 50% 50%;
   }
 
   .md\:grid-cols-\[55\%_1fr\] {

@@ -95,6 +95,11 @@ img {
   transform: translate(0, -50%);
 }
 
+.photo-item:nth-child(5) .hidden {
+  left: 0;
+  bottom: 0;
+}
+
 .photo-item a:hover ~ .hidden {
   display: block;
 }

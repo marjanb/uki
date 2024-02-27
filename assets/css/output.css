@@ -828,16 +828,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -970,6 +962,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -984,18 +980,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-right {

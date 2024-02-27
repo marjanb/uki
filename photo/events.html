@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap"
     rel="stylesheet">
   <link href="/assets/css/output.css" rel="stylesheet">
-  <link href="/assets/css/style.css" rel="stylesheet"/>
+
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
         integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag=="
@@ -21,7 +21,7 @@
 <div class="app container mx-auto px-4">
   <header>
     <div class="flex justify-between pt-4 md:pt-8 items-center">
-     <h1 class="text-5xl md:text-6xl font-extralight">
+      <h1 class="text-5xl md:text-6xl font-extralight">
         <a href="/">UKI TUBI</a>
       </h1>
       <div>
@@ -41,21 +41,51 @@
       <ul class="flex uppercase font-light text-xl justify-between pb-8 nav nav--sub flex-col md:flex-row">
         <li><a href="/photo/them.html">Them</a></li>
         <li><a href="/photo/age-of-aquarius.html">Age Of Aquarius</a></li>
-        <li><a href="/photo/sine-moj.html" class="active">Sine Moj</a></li>
+        <li><a href="/photo/sine-moj.html">Sine Moj</a></li>
         <li><a href="/photo/faces.html">Faces</a></li>
-        <li><a href="/photo/events.html">Events</a></li>
+        <li><a href="/photo/events.html" class="active">Events</a></li>
         <li><a href="/photo/more.html">More</a></li>
       </ul>
     </div>
   </header>
-  <main class="max-w-5xl app-content">
+  <main class="app-content">
     <div id="macy-container">
-      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj1.jpg"><img
-        src="/assets/img/photo/sine-moj/sinemoj1_thumb.jpg"/></a>
-      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj2.jpg"><img
-        src="/assets/img/photo/sine-moj/sinemoj2_thumb.jpg"/></a>
-      <a loading="lazy" href="/assets/img/photo/sine-moj/sinemoj3.jpg"><img
-        src="/assets/img/photo/sine-moj/sinemoj3_thumb.jpg"/></a>
+      <a loading="lazy" href="/assets/img/photo/events/event1.jpg">
+        <img src="/assets/img/photo/events/event1_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event2.jpg">
+        <img src="/assets/img/photo/events/event2_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event3.jpg">
+        <img src="/assets/img/photo/events/event3_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event4.jpg">
+        <img src="/assets/img/photo/events/event4_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event5.jpg">
+        <img src="/assets/img/photo/events/event5_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event6.jpg">
+        <img src="/assets/img/photo/events/event6_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event7.jpg">
+        <img src="/assets/img/photo/events/event7_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event8.jpg">
+        <img src="/assets/img/photo/events/event8_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event9.jpg">
+        <img src="/assets/img/photo/events/event9_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event10.jpg">
+        <img src="/assets/img/photo/events/event10_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event11.jpg">
+        <img src="/assets/img/photo/events/event11_thumb.jpg"/>
+      </a>
+      <a loading="lazy" href="/assets/img/photo/events/event12.jpg">
+        <img src="/assets/img/photo/events/event12_thumb.jpg"/>
+      </a>
     </div>
   </main>
   <footer class="footer">
@@ -81,8 +111,11 @@
       y: 0,
     },
     breakAt: {
-      5000: {
-        columns: 1
+      468: {
+        columns: 2
+      },
+      1024: {
+        columns: 3
       },
     },
   });

@@ -868,6 +868,14 @@ video {
   max-width: 36rem;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-cols-\[1fr\] {
   grid-template-columns: 1fr;
 }
@@ -980,6 +988,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-right {

@@ -100,9 +100,9 @@ img {
   bottom: 0;
 }
 
-.photo-item:nth-child(5) .hidden {
+.photo-item:nth-child(6) .hidden {
   left: 0;
-  bottom: 0;
+  bottom: 50%;
 }
 
 .photo-item a:hover ~ .hidden {
@@ -247,4 +247,53 @@ img {
     background-position: -7px -7px;
     background-size: 134px;
   }
+}
+
+@media (min-width: 768px) {
+  .photo-top {
+    display: flex;
+  }
+
+  .photo-top__work {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-top > div {
+    width: 50%;
+  }
+}
+
+.photo-top h2 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  /*margin: 0 20px;*/
+}
+
+@media (min-width: 768px) {
+  .photo-top h2 {
+    padding: 10px 30px
+  }
+}
+
+.menu-title {
+  border-radius: 60px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+.menu-title {
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+
 }

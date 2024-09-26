@@ -99,6 +99,11 @@ img {
   bottom: 0;
 }
 
+.photo-item:nth-child(6) .hidden {
+  left: 0;
+  bottom: 50%;
+}
+
 .photo-item a:hover ~ .hidden {
   display: block;
 }
@@ -240,6 +245,50 @@ img {
     height: 120px;
     background-position: -7px -7px;
     background-size: 134px;
+  }
+
+  .photo-top {
+    display: flex;
+  }
+
+  .photo-top__work {
+    text-align: right;
+  }
+
+  .photo-top > div {
+    width: 50%;
+  }
+}
+
+.photo-top h2 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  border-radius: 60px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  /*margin: 0 20px;*/
+}
+
+@media (min-width: 768px) {
+  .photo-top h2 {
+    padding: 10px 30px
+  }
+}
+
+.menu-title {
+  border-radius: 60px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu-title {
+    padding: 10px 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -872,28 +921,20 @@ video {
   max-width: 36rem;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-\[1fr\] {
   grid-template-columns: 1fr;
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -910,10 +951,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-2 {
@@ -1102,12 +1139,6 @@ video {
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 768px) {
   .md\:order-1 {
     order: 1;
@@ -1115,6 +1146,10 @@ video {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-\[50\%_50\%\] {
@@ -1125,16 +1160,12 @@ video {
     grid-template-columns: 55% 1fr;
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:py-4 {
